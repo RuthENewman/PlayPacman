@@ -1,0 +1,65 @@
+body, html {
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+}
+
+.wrapper {
+  margin-top: 25px;
+}
+
+#game {
+  width: 600px;
+  position: relative;
+  margin: 0 auto;
+}
+
+* {
+  /* outline: 1px dotted purple; */
+}
+
+.heading {
+  text-align: center;
+  outline: none;
+  color: rebeccapurple;
+  font-family: monospace;
+  margin-top: 25px;
+}
+
+.pacman, .wall, .coin, .ground {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: -2px;
+  vertical-align: top;
+}
+
+.pacman {
+  background-image: url('pacman.png');
+}
+
+.wall {
+  background-image: url('wall.png');
+}
+
+.coin {
+  background-image: url('coin.png');
+}
+
+.ground {
+  background-image: url('ground.png');
+}
+
+@media only screen and (max-device-width: 480px) {
+  #game {
+    width: 280px;
+    position: relative;
+    margin: 0 auto;
+  }
+  .pacman, .wall, .coin, .ground {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
