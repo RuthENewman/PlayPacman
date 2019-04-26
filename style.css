@@ -12,6 +12,8 @@ body, html {
   width: 600px;
   position: relative;
   margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 * {
@@ -23,7 +25,8 @@ body, html {
   outline: none;
   color: rebeccapurple;
   font-family: monospace;
-  margin-top: 25px;
+  margin-top: 40px;
+  font-size: 40px;
 }
 
 .pacman, .wall, .coin, .ground {
@@ -50,16 +53,79 @@ body, html {
   background-image: url('ground.png');
 }
 
+.scoreBoardWrapper {
+  font-family: monospace;
+  border: 5px solid purple;
+  font-size: 40px;
+  background-color: rebeccapurple;
+  color: white;
+  text-align: center;
+  width: 300px;
+  position: relative;
+  margin: 0 auto;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.winningMessage {
+  text-align: center;
+  font-family: monospace;
+  font-size: 40px;
+  color: rebeccapurple;
+}
+
+.playAgain {
+  font-family: monospace;
+  font-size: 40px;
+  color: rebeccapurple;
+  cursor: pointer;
+  border: 5px solid purple;
+  border-radius: 10px;
+  font-size: 40px;
+  background-color: white;
+  text-align: center;
+  width: 300px;
+  position: relative;
+  margin: 0 auto;
+  padding: 8px;
+  margin-top: 40px;
+  display: none;
+}
+
 @media only screen and (max-device-width: 480px) {
+  .heading {
+    margin-top: 60px;
+  }
   #game {
     width: 280px;
     position: relative;
     margin: 0 auto;
+    margin-top: 30px;
   }
   .pacman, .wall, .coin, .ground {
     width: 25px;
     height: 25px;
     display: inline-block;
     vertical-align: top;
+  }
+
+  .pacman {
+    background-image: url('pacman.png');
+    background-size: 90%;
+  }
+
+  .wall {
+    background-image: url('wall.png');
+    background-size: 100%;
+  }
+
+  .coin {
+    background-image: url('coin.png');
+    background-size: 100%;
+  }
+
+  .ground {
+    background-image: url('ground.png');
+    background-size: 100%;
   }
 }
